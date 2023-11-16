@@ -16,4 +16,5 @@ print(res)
 def showEmployee(name, salary=9000):
     print("姓名:",name,"薪資:",salary)
 showEmployee("Tom", 12000)
+#未給薪資 套用預設值9000
 showEmployee("Jerry")
