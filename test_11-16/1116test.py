@@ -1,19 +1,24 @@
-class person:
-    def __init__(self,name,age):
-        self.name = name
-        self.age = age
+class Myshape:
+    def __init__(self,side,length,width,radius):
+        self.side = side          #邊
+        self.length = length      #長
+        self.width = width        #寬
+        self.radius = radius      #半徑
 
-    def __str__(self):
-        return f"Name:{self.name}\n Age:{self.age}"    
+    #正方形面積
+    def square_area(self):
+        return (self.side * self.side)    
 
-    def myfunc(self):
-        print("Hallo my name is :"+self.name)
+    #長方形面積
+    def rectangular_area(self):
+        return (self.length * self.width)
 
+    #圓形面積
+    def circular_area(self):
+        return (self.radius**2 * 3.14)
 
-p1 = person("Elsa",269)
-p1.myfunc
+shape = Myshape(2,2,2,2)
 
-print(p1.name)
-print(p1.age)
-
-print(p1)
+print(shape.square_area())
+print(shape.rectangular_area())
+print(shape.circular_area())
