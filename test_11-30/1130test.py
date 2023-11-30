@@ -1,4 +1,6 @@
+#建立類別
 class student ():
+
     SchoolName = "STUST"
     Schooladdress = "南台街1號"
     def __init__(self) -> None:
